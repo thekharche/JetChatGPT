@@ -14,7 +14,7 @@ appId: com.example.compose.jetchat
 - inputText: "Hello, how are you?"
 - tapOn:
     id: "sendButton"
-- inputText: "What's GPT?"
+- inputText: "An image of White Flower, please!"
 - tapOn:
     id: "sendButton"
 - tapOn:
