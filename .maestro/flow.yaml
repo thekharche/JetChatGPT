@@ -1,0 +1,25 @@
+appId: com.example.compose.jetchat
+---
+- launchApp:
+    clearState: true
+- assertVisible:
+    text: ".*Welcome.*"
+- runFlow:
+    when:
+      visible:
+        text: ".*Message.*"
+    commands:
+      - tapOn:
+          id: "inputTextHint"
+- inputText: "Hello, how are you?"
+- tapOn:
+    id: "sendButton"
+- inputText: "What's GPT?"
+- tapOn:
+    id: "sendButton"
+- tapOn:
+    id: "ConversationTestTag"
+- swipe:
+    direction: DOWN
+    duration: 3000
+- back
